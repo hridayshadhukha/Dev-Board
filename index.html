@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev-Board</title>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-[#F4F7FF]">
+    <section class="max-w-6xl mx-auto">
+      <header class="pt-5">
+        <nav class="flex items-center justify-between bg-white p-4 rounded-2xl">
+          <div class="flex items-center">
+            <img src="assets/logo.png" alt="" />
+            <h2 class="text-4xl font-light text-[#00303C]">
+              Dev<span class="font-bold">Board</span>
+            </h2>
+          </div>
+          <div class="flex items-center">
+            <div class="flex items-center p-3 bg-[#F4F7FF] rounded-full">
+              <img src="assets/checkbox.png" alt="" />
+              <h3 class="text-3xl font-bold ml-3">23</h3>
+            </div>
+            <div class="ml-10">
+              <img src="assets/theme-btn.png" alt="" />
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="pt-10">
+        <section class="bg-white">
+          <section class="flex items-center gap-4 p-6">
+            <div
+              class="flex items-center pl-12 pr-4 py-8 bg-[#F4F7FF] rounded-xl"
+            >
+              <div class="relative right-10 bottom-5">
+                <div class="absolute bg-white rounded-full p-8"></div>
+                <img
+                  src="assets/checkbox.png"
+                  alt=""
+                  class="relative top-[18px] left-[18px]"
+                />
+              </div>
+              <div class="ml-2">
+                <h4 class="text-base font-medium">Task Assigned </h4>
+                <p class="text-3xl font-bold">05</p>
+              </div>
+            </div>
+            <div
+              class="flex items-center rounded-xl px-16 py-5 bg-gradient-to-r from-[#3752FD] from-10% via-[#6C7FFA] via-30% to-[#9BA8F8] to-90"
+            >
+              <div class="-ml-6">
+                <img src="assets/board.png" alt="" class="" />
+              </div>
+              <div>
+                <h2 class="text-2xl font-medium text-white">
+                  Discover Something <br />
+                  New Today!
+                </h2>
+              </div>
+            </div>
+            <div
+              class="flex items-center pl-12 pr-4 py-8 bg-[#F4F7FF] rounded-xl"
+            >
+              <div class="relative right-10 bottom-5">
+                <div class="absolute bg-white rounded-full p-8"></div>
+                <img
+                  src="assets/calender.png"
+                  alt=""
+                  class="relative top-[18px] left-[18px]"
+                />
+              </div>
+              <div class="ml-2">
+                <h2 class="text-xl font-normal">
+                  Wed , <br />
+                  <span class="text-xl font-bold">Jul 28 2025</span>
+                </h2>
+              </div>
+            </div>
+          </section>
+          <div class="border-b border-dashed text-[#c6cefc] mb-6"></div>
+
+          <section class="p-6 grid grid-cols-3 gap-6">
+            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+              <h4
+                class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
+              >
+                ShopEase
+              </h4>
+              <h2 class="text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <div class="px-6 py-4 bg-white mt-4 rounded-lg">
+                <p class="text-base">
+                  Debug using Chrome <br />
+                  <span class="whitespace-nowrap">DevTools, check for overlappi...</span>
+                </p>
+              </div>
+
+              <div class="my-4 border-b border-dashed text-[#c6cefc]"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4>Deadline</h4>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+              <h4
+                class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
+              >
+              CloudSync
+              </h4>
+              <h2 class="text-2xl font-medium mt-4">Add Dark Mode</h2>
+              <div class="px-6 py-4 bg-white mt-4 rounded-lg">
+                <p class="text-base">
+                  Store the user's preference in <br />
+                  <span class="whitespace-nowrap">localStorage, update CSS vari...</span>
+                </p>
+              </div>
+
+              <div class="my-4 border-b border-dashed text-[#c6cefc]"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4>Deadline</h4>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+              <h4
+                class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
+              >
+              SwiftPay
+              </h4>
+              <h2 class="text-2xl font-medium mt-4">Optimize  Home page </h2>
+              <div class="px-6 py-4 bg-white mt-4 rounded-lg">
+                <p class="text-base">
+                  Debug using Chrome <br />
+                  <span class="whitespace-nowrap">DevTools, check for overlappi...</span>
+                </p>
+              </div>
+
+              <div class="my-4 border-b border-dashed text-[#c6cefc]"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4>Deadline</h4>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+              <h4
+                class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
+              >
+              Meta
+              </h4>
+              <h2 class="text-2xl font-medium mt-4">Add new emoji 🤲</h2>
+              <div class="px-6 py-4 bg-white mt-4 rounded-lg">
+                <p class="text-base">
+                  Debug using Chrome <br />
+                  <span class="whitespace-nowrap">DevTools, check for overlappi...</span>
+                </p>
+              </div>
+
+              <div class="my-4 border-b border-dashed text-[#c6cefc]"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4>Deadline</h4>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+              <h4
+                class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
+              >
+              Google LLC
+              </h4>
+              <h2 class="text-2xl font-medium mt-4">Integrate OpenAI API</h2>
+              <div class="px-6 py-4 bg-white mt-4 rounded-lg">
+                <p class="text-base">
+                  Debug using Chrome <br />
+                  <span class="whitespace-nowrap">DevTools, check for overlappi...</span>
+                </p>
+              </div>
+
+              <div class="my-4 border-b border-dashed text-[#c6cefc]"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4>Deadline</h4>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+              <h4
+                class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
+              >
+              Glassdoar
+              </h4>
+              <h2 class="text-2xl font-medium mt-4">Improve Job searching </h2>
+              <div class="px-6 py-4 bg-white mt-4 rounded-lg">
+                <p class="text-base">
+                  Debug using Chrome <br />
+                  <span class="whitespace-nowrap">DevTools, check for overlappi...</span>
+                </p>
+              </div>
+
+              <div class="my-4 border-b border-dashed text-[#c6cefc]"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4>Deadline</h4>
+                  <p>21 March 2025</p>
+                </div>
+                <div>
+                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg">Completed</button>
+                </div>
+              </div>
+            </div>
+
+            
+
+            
+          </section>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
