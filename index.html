@@ -23,7 +23,7 @@
   <body class="min-h-screen bg-[#F4F7FF]">
     <section class="max-w-6xl mx-auto">
       <header class="pt-5">
-        <nav class="flex items-center justify-between bg-white p-4 rounded-2xl">
+        <nav class="flex items-center justify-between bg-white p-4 rounded-2xl drop-shadow-lg">
           <div class="flex items-center">
             <img src="assets/logo.png" alt="" />
             <h2 class="text-4xl font-light text-[#00303C]">
@@ -36,7 +36,7 @@
               <h3 id="plus-1" class="text-3xl font-bold ml-3">23</h3>
             </div>
             <div class="ml-10">
-              <img src="assets/theme-btn.png" alt="" />
+              <img id="color-change" src="assets/theme-btn.png" alt="" />
             </div>
           </div>
         </nav>
@@ -58,14 +58,14 @@
               </div>
               <div class="ml-2">
                 <h4 class="text-base font-medium whitespace-nowrap">Task Assigned </h4>
-                <p id="plus" class="text-3xl font-bold">05</p>
+                <p id="plus" class="text-3xl font-bold">6</p>
               </div>
             </div>
-            <div
+            <div id="click"
               class="flex items-center rounded-xl px-16 py-5 bg-gradient-to-r from-[#3752FD] from-10% via-[#6C7FFA] via-30% to-[#9BA8F8] to-90 cursor-pointer"
             >
               <div class="-ml-6">
-                <img src="assets/board.png" alt="" class="" />
+                <img src="assets/board.png" alt=""/>
               </div>
               <div>
                 <h2 class="text-2xl font-medium text-white">
@@ -96,13 +96,13 @@
           <div class="border-b border-dashed text-[#c6cefc] mb-6"></div>
 
           <section class="p-6 grid grid-cols-3 gap-4">
-            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+            <div class="card bg-[#F4F7FF] px-6 py-4 rounded-2xl">
               <h4
                 class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
               >
                 ShopEase
               </h4>
-              <h2 class="text-xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              <h2 class="card-title text-xl font-medium mt-4">Fix Mobile Button Issue</h2>
               <div class="px-2 py-4 bg-white mt-4 rounded-lg">
                 <p class="text-base">
                   Debug using Chrome <br />
@@ -118,22 +118,24 @@
                   <p class="text-sm">21 March 2025</p>
                 </div>
                 <div>
-                  <button id="btn-1" class="px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
+                  <button id="btn-1" class="complete-btn px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
                 </div>
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+            
+
+            <div class="card bg-[#F4F7FF] px-6 py-4 rounded-2xl">
               <h4
                 class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
               >
               CloudSync
               </h4>
-              <h2 class="text-xl font-medium mt-4">Add Dark Mode</h2>
+              <h2 class="card-title text-xl font-medium mt-4">Add Dark Mode</h2>
               <div class="px-2 py-4 bg-white mt-4 rounded-lg">
                 <p class="text-base">
-                  <span class="whitespace-nowrap">Store the user's preference</span> <br />
-                  <span class="whitespace-nowrap">localStorage, update CSS...</span>
+                  Debug using Chrome <br />
+                  <span class="whitespace-nowrap">DevTools, check for over...</span>
                 </p>
               </div>
 
@@ -145,18 +147,20 @@
                   <p class="text-sm">21 March 2025</p>
                 </div>
                 <div>
-                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
+                  <button id="btn-2" class="complete-btn px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
                 </div>
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+
+
+            <div class="card bg-[#F4F7FF] px-6 py-4 rounded-2xl">
               <h4
                 class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
               >
               SwiftPay
               </h4>
-              <h2 class="text-xl font-medium mt-4">Optimize  Home page </h2>
+              <h2 class="card-title text-xl font-medium mt-4">Optimize  Home page </h2>
               <div class="px-2 py-4 bg-white mt-4 rounded-lg">
                 <p class="text-base">
                   Debug using Chrome <br />
@@ -172,18 +176,18 @@
                   <p class="text-sm">21 March 2025</p>
                 </div>
                 <div>
-                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
+                  <button id="btn-3" class="complete-btn px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
                 </div>
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+            <div class="card bg-[#F4F7FF] px-6 py-4 rounded-2xl">
               <h4
                 class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
               >
               Meta
               </h4>
-              <h2 class="text-xl font-medium mt-4">Add new emoji 🤲</h2>
+              <h2 class="card-title text-xl font-medium mt-4">Add new emoji 🤲</h2>
               <div class="px-2 py-4 bg-white mt-4 rounded-lg">
                 <p class="text-base">
                   Debug using Chrome <br />
@@ -199,18 +203,18 @@
                   <p class="text-sm">21 March 2025</p>
                 </div>
                 <div>
-                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
+                  <button id="btn-4" class="complete-btn px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
                 </div>
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+            <div class="card bg-[#F4F7FF] px-6 py-4 rounded-2xl">
               <h4
                 class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
               >
               Google LLC
               </h4>
-              <h2 class="text-xl font-medium mt-4">Integrate OpenAI API</h2>
+              <h2 class="card-title text-xl font-medium mt-4">Integrate OpenAI API</h2>
               <div class="px-2 py-4 bg-white mt-4 rounded-lg">
                 <p class="text-base">
                   Debug using Chrome <br />
@@ -226,18 +230,18 @@
                   <p class="text-sm">21 March 2025</p>
                 </div>
                 <div>
-                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
+                  <button btn-5 class="complete-btn px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
                 </div>
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] px-6 py-4 rounded-2xl">
+            <div class="card bg-[#F4F7FF] px-6 py-4 rounded-2xl">
               <h4
                 class="w-28 h-10 bg-white flex items-center justify-center rounded-lg"
               >
               Glassdoar
               </h4>
-              <h2 class="text-xl font-medium mt-4">Improve Job searching </h2>
+              <h2 class="card-title text-xl font-medium mt-4">Improve Job searching </h2>
               <div class="px-2 py-4 bg-white mt-4 rounded-lg">
                 <p class="text-base">
                   Debug using Chrome <br />
@@ -253,7 +257,7 @@
                   <p class="text-sm">21 March 2025</p>
                 </div>
                 <div>
-                  <button class="px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
+                  <button id="btn-6" class="complete-btn px-5 py-2 bg-[#3752FD] rounded-lg translate-x-4 text-white">Completed</button>
                 </div>
               </div>
             </div>
@@ -272,11 +276,11 @@
             <h2 class="text-xl font-medium whitespace-nowrap ml-3">Activity Log</h2>
           </div>
           <div class="px-16">
-            <button class="px-5 py-3 bg-[#3752FD] rounded-lg mt-5 text-white ">Clear History</button>
+            <button id="clear" class="px-5 py-3 bg-[#3752FD] rounded-lg mt-5 text-white ">Clear History</button>
           </div>
           <div class="border-b border-dashed w-full border-[#c6cefc] mt-5"></div>
           <br><br>
-          <div id="add-text"></div>
+          <div id="add-text" class="bg-[#F4F7FF]"></div>
         </section>
         
 
