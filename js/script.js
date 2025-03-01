@@ -71,3 +71,5 @@ function changeColor(){
 }
 
 document.getElementById("color-change").addEventListener("click", changeColor);
+
+document.getElementById("date").innerHTML = new Date().toDateString();
