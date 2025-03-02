@@ -1,92 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-  <!-- daisy ui -->
-  <link
-  href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
-  rel="stylesheet"
-  type="text/css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet"
-/>
-</head>
-<body class="min-h-screen bg-[#F4F7FF]">
-  <section class="max-w-6xl mx-auto pb-10">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen bg-[#F4F7FF]">
+    <section class="max-w-6xl mx-auto pb-10">
+      <header class="pt-5">
+        <nav
+          class="flex items-center justify-between bg-white p-4 rounded-2xl drop-shadow-lg"
+        >
+          <div class="flex items-center">
+            <img src="assets/logo.png" alt="" />
+            <h2 class="text-4xl font-light text-[#00303C]">
+              Dev<span class="font-bold">Board</span>
+            </h2>
+          </div>
+          <button
+            id="back-dev"
+            onclick="mainPage()"
+            class="px-5 py-3 bg-[#3752FD] cursor-pointer text-white rounded-xl text-xl font-medium cursor-pointer"
+          >
+            Back to Desk
+          </button>
+        </nav>
+      </header>
 
-    <header class="pt-5">
-      <nav class="flex items-center justify-between bg-white p-4 rounded-2xl drop-shadow-lg">
-        <div class="flex items-center">
-          <img src="assets/logo.png" alt="" />
-          <h2 class="text-4xl font-light text-[#00303C]">
-            Dev<span class="font-bold">Board</span>
+      <main>
+        <h2 class="mt-4 text-2xl font-extrabold text-center">Blogs</h2>
+        <br />
+        <div class="bg-white rounded-xl drop-shadow-lg">
+          <h2 class="text-2xl font-bold p-5">
+            Question-1: What are the different ways to select an element in the
+            DOM?
           </h2>
-        </div>
-        <button id="back-dev" onclick="mainPage()" class="px-5 py-3 bg-[#3752FD] cursor-pointer text-white rounded-xl text-xl font-medium cursor-pointer">Back to Desk</button>
-      </nav>
-    </header>
-
-    <main>
-      <h2 class="mt-4 text-2xl font-extrabold text-center">Blogs</h2>
-      <br>
-      <div class="bg-white rounded-xl drop-shadow-lg">
-        <h2 class="text-2xl font-bold p-5">Question-1: What are the different ways to select an element in the DOM?</h2>
-        <div class="border-b border-dashed text-[#c6cefc]"></div>
-        <p class="p-5 text-xl font-medium text-gray-400">DOM এ যেকোনো একটি এলিমেন্ট সিলেক্ট করার জন্য বেশ কয়েকটি ম্যাথড রয়েছে।
-          <br>
-          ১। getElementById মেথডে id যুক্ত করে এটি সিলেক্ট করা যায়। 
-          <br>
-          ২।getElementByClass মেথডে class যুক্ত করে এটি সিলেক্ট করা যায়।
-          <br>
-          ৩।getElementsByTagName মেথডে tagname  যুক্ত করে এটি সিলেক্ট করা যায়।
-          এছাড়াও querySelector() ও
-          querySelectorAll() ব্যবহার করেও DOM এ Element select করা যায়।</p>
-      </div>
-      <br>
-      <div class="bg-white rounded-xl drop-shadow-lg">
-        <h2 class="text-2xl font-bold p-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
-        <div class="border-b border-dashed text-[#c6cefc]"></div>
-        <p class="p-5 text-xl font-medium text-gray-400">innerHTML ট্যাগসহ টেক্সট রিটার্ন বা সেট করতে ব্যবহার করা হয়।
-          <br>
-          innerText শুধুমাত্র দৃশ্যমান টেক্সট রিটার্ন বা সেট করে।
-          <br>
-          textContent সম্পূর্ণ টেক্সট রিটার্ন বা সেট করে, এমনকি display: none; থাকলেও।</p>
-      </div>
-      <br>
-      <div class="bg-white rounded-xl drop-shadow-lg">
-        <h2 class="text-2xl font-bold p-5">Question-3: What is event delegation in the DOM?</h2>
-        <div class="border-b border-dashed text-[#c6cefc]"></div>
-        <p class="p-5 text-xl font-medium text-gray-400">event delegation হল একটি প্রযুক্তি যেখানে একাধিক চাইল্ড এলিমেন্টের জন্য আলাদাভাবে ইভেন্ট লিসেনার যুক্ত না করে, তাদের parent এলিমেন্টে একটি ইভেন্ট লিসেনার সেট করা যায়। যখন কোনো চাইল্ড এলিমেন্টে ইভেন্ট ট্রিগার হয়, তখন সেই ইভেন্টটি বাবলিং (bubbling) এর মাধ্যমে প্যারেন্ট এলিমেন্টে পৌঁছে যায়, এবং আমরা সেই ইভেন্টটি হ্যান্ডেল করতে পারি।</p>
-      </div>
-      <br>
-      <div class="bg-white rounded-xl drop-shadow-lg">
-        <h2 class="text-2xl font-bold p-5">Question-4: What is event bubbling in the DOM?</h2>
-        <div class="border-b border-dashed text-[#c6cefc]"></div>
-        <p class="p-5 text-xl font-medium text-gray-400">event bubbling হল একটি DOM ইভেন্ট প্রপাগেশন পদ্ধতি, যেখানে কোনো চাইল্ড এলিমেন্টে ইভেন্ট ঘটলে, সেটি প্রথমে সেই চাইল্ড এলিমেন্টের ইভেন্ট হ্যান্ডলার চালায় এবং তারপর ধীরে ধীরে প্যারেন্ট এলিমেন্টগুলোর মাধ্যমে উপরে উঠে।</p>
-      </div>
-      <br>
-      <div class="bg-white rounded-xl drop-shadow-lg">
-        <h2 class="text-2xl font-bold p-5">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
-        <div class="border-b border-dashed text-[#c6cefc]"></div>
-        <p class="p-5 text-xl font-medium text-gray-400">createElement মেথড ব্যবহার করা হয় যেকোনো ধরনের HTML এলিমেন্ট তৈরি করতে।যেমন div, span, p ইত্যাদি। 
-          <br><br>
-          এলিমেন্ট DOM-এ যোগ করার জন্য appendChildমেথড ব্যবহার করা হয়, যা নতুন এলিমেন্টটিকে প্যারেন্ট এলিমেন্টের শেষের দিকে যোগ করে। এছাড়া, prepend() মেথড ব্যবহার করে এলিমেন্টটি প্যারেন্টের প্রথম দিকে যোগ করা যায়। 
-          <br><br>
-          যখন এলিমেন্টটি আর প্রয়োজন হয়না, তখন আপনি remove() অথবা removeChild() মেথড ব্যবহার করে সেটি DOM থেকে মুছে ফেলতে পারেন।এই পদ্ধতি ব্যবহার করে আপনি ডাইনামিকভাবে এলিমেন্ট তৈরি, যোগ এবং মুছে ফেলতে পারেন।
+          <div class="border-b border-dashed text-[#c6cefc]"></div>
+          <p class="p-5 text-xl font-medium text-gray-400">
+            DOM এ যেকোনো একটি এলিমেন্ট সিলেক্ট করার জন্য বেশ কয়েকটি ম্যাথড
+            রয়েছে।
+            <br />
+            ১। getElementById মেথডে id যুক্ত করে এটি সিলেক্ট করা যায়।
+            <br />
+            ২।getElementByClass মেথডে class যুক্ত করে এটি সিলেক্ট করা যায়।
+            <br />
+            ৩।getElementsByTagName মেথডে tagname যুক্ত করে এটি সিলেক্ট করা যায়।
+            এছাড়াও querySelector() ও querySelectorAll() ব্যবহার করেও DOM এ
+            Element select করা যায়।
           </p>
-      </div>
-    </main>
-  </section>
+        </div>
+        <br />
+        <div class="bg-white rounded-xl drop-shadow-lg">
+          <h2 class="text-2xl font-bold p-5">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <div class="border-b border-dashed text-[#c6cefc]"></div>
+          <p class="p-5 text-xl font-medium text-gray-400">
+            innerHTML ট্যাগসহ টেক্সট রিটার্ন বা সেট করতে ব্যবহার করা হয়।
+            <br />
+            innerText শুধুমাত্র দৃশ্যমান টেক্সট রিটার্ন বা সেট করে।
+            <br />
+            textContent সম্পূর্ণ টেক্সট রিটার্ন বা সেট করে, এমনকি display: none;
+            থাকলেও।
+          </p>
+        </div>
+        <br />
+        <div class="bg-white rounded-xl drop-shadow-lg">
+          <h2 class="text-2xl font-bold p-5">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <div class="border-b border-dashed text-[#c6cefc]"></div>
+          <p class="p-5 text-xl font-medium text-gray-400">
+            event delegation হল একটি প্রযুক্তি যেখানে একাধিক চাইল্ড এলিমেন্টের
+            জন্য আলাদাভাবে ইভেন্ট লিসেনার যুক্ত না করে, তাদের parent এলিমেন্টে
+            একটি ইভেন্ট লিসেনার সেট করা যায়। যখন কোনো চাইল্ড এলিমেন্টে ইভেন্ট
+            ট্রিগার হয়, তখন সেই ইভেন্টটি বাবলিং (bubbling) এর মাধ্যমে প্যারেন্ট
+            এলিমেন্টে পৌঁছে যায়, এবং আমরা সেই ইভেন্টটি হ্যান্ডেল করতে পারি।
+          </p>
+        </div>
+        <br />
+        <div class="bg-white rounded-xl drop-shadow-lg">
+          <h2 class="text-2xl font-bold p-5">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <div class="border-b border-dashed text-[#c6cefc]"></div>
+          <p class="p-5 text-xl font-medium text-gray-400">
+            event bubbling হল একটি DOM ইভেন্ট প্রপাগেশন পদ্ধতি, যেখানে কোনো
+            চাইল্ড এলিমেন্টে ইভেন্ট ঘটলে, সেটি প্রথমে সেই চাইল্ড এলিমেন্টের
+            ইভেন্ট হ্যান্ডলার চালায় এবং তারপর ধীরে ধীরে প্যারেন্ট এলিমেন্টগুলোর
+            মাধ্যমে উপরে উঠে।
+          </p>
+        </div>
+        <br />
+        <div class="bg-white rounded-xl drop-shadow-lg">
+          <h2 class="text-2xl font-bold p-5">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <div class="border-b border-dashed text-[#c6cefc]"></div>
+          <p class="p-5 text-xl font-medium text-gray-400">
+            createElement মেথড ব্যবহার করা হয় যেকোনো ধরনের HTML এলিমেন্ট তৈরি
+            করতে।যেমন div, span, p ইত্যাদি। <br /><br />
+            এলিমেন্ট DOM-এ যোগ করার জন্য appendChildমেথড ব্যবহার করা হয়, যা নতুন
+            এলিমেন্টটিকে প্যারেন্ট এলিমেন্টের শেষের দিকে যোগ করে। এছাড়া,
+            prepend() মেথড ব্যবহার করে এলিমেন্টটি প্যারেন্টের প্রথম দিকে যোগ করা
+            যায়।
+            <br /><br />
+            যখন এলিমেন্টটি আর প্রয়োজন হয়না, তখন আপনি remove() অথবা removeChild()
+            মেথড ব্যবহার করে সেটি DOM থেকে মুছে ফেলতে পারেন।এই পদ্ধতি ব্যবহার
+            করে আপনি ডাইনামিকভাবে এলিমেন্ট তৈরি, যোগ এবং মুছে ফেলতে পারেন।
+          </p>
+        </div>
+      </main>
+    </section>
 
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
