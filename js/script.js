@@ -17,8 +17,8 @@ document.querySelectorAll(".complete-btn").forEach((button) => {
     document.getElementById("plus-1").innerText = plusSum;
 
     button.disabled = true;
-    button.style.backgroundColor= "#d3d3d3";
-    button.style.color = "#808080";
+    button.style.backgroundColor= "#CDD3FD";
+    button.style.color = "#FFFFFF";
 
 const now = new Date();
     let hour = now.getHours();
@@ -35,9 +35,16 @@ const now = new Date();
 
     const cardTitle = button.closest(".card").querySelector(".card-title").innerText;
 
-    const newText = `You have completed the task <br> ${cardTitle} at ${times} <br><br>`;
+    // const newText = `You have completed the task <br> ${cardTitle} at ${times} <br><br>`;
 
-    document.getElementById("add-text").innerHTML += newText;
+      const newMessage = document.createElement("div");
+      newMessage.classList.add("message");
+      newMessage.innerHTML = `You have completed the task <br> ${cardTitle} at ${times}`;
+
+
+    // document.getElementById("add-text").innerHTML += newText;
+
+    document.getElementById("add-text").appendChild(newMessage);
 
     if(sum === 0){
       alert("congrates!!! you have completed all the current task");
@@ -60,15 +67,14 @@ function(event){
   document.getElementById("add-text").innerHTML = "";
 })
 
-const colors = ["#E0F2E7", "#FFEBES", "#E8F6EF", "#FAF3DD", "#E4F1FF", "#FFDEE9"];
-
-let currentIndex = 0;
+function hexColor(){
+  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6,"0")}`;
+}
 
 function changeColor(){
-  document.body.style.backgroundColor = colors[currentIndex];
-
-  currentIndex = (currentIndex + 1) % colors.length;
+  document.body.style.background = hexColor();
 }
+
 
 document.getElementById("color-change").addEventListener("click", changeColor);
 
